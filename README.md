@@ -11,6 +11,8 @@ Looking into redoing my personal site since my old ruby on rails on is quite out
 Goals
 -----
 
-- I want to take this opportunity to learn Scala and us the Play! Framework.
-- Added a Projects page that lists my personal projects
-- Add new personal projects by login into admin mode and filling out the project info to be stored in a MongoDB database.
+I want to take this opportunity to learn Scala and the Play! Framework.
+
+Web App Features:
+- Have a Projects page that lists my personal projects
+- Ability to add new personal projects by login into admin mode and filling out the project info to be stored in a MongoDB database.
