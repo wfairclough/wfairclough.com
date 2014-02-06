@@ -8,10 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Will Fairclough | @title</title>
         <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("foundation.css"))'/>
+        <link rel='stylesheet' href='@routes.Assets.at("stylesheets/main.css")'/>
 
         <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery.js"))'></script>
         <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("modernizr.js"))'></script>
-
     </head>
 
     <body>
@@ -22,7 +22,6 @@
         @content
     </div>
 
-
     @footer()
 
     <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("foundation.min.js"))'></script>
@@ -30,6 +29,6 @@
         $(document).foundation();
         console.log("Loaded Foundation");
     </script>
-
+    <a href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" src="http://www.reactivemanifesto.org/images/ribbons/we-are-reactive-white-right.png"> </a>
     </body>
 </html>
