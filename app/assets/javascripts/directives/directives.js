@@ -18,3 +18,19 @@
 //
 //	}
 //});
+
+
+willApp.directive('scrollTo', function($document, Scroller) {
+   return {
+       restrict: 'A',
+       scope: {
+            elemName: '@scrollTo'
+       },
+       link: function( $scope, $element ) {
+           $element.on("click", function() {
+               Scroller.scrollTo($scope.elemName)
+           })
+
+       }
+   }
+});
