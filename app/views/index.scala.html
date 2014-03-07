@@ -1,3 +1,4 @@
+@(userForm: Form[UserData])
 
 @main("Home") {
 
@@ -20,7 +21,7 @@
                     </p>
                 </div>
                 <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
-                    <h3 class="content-subhead">
+                    <h3 clabss="content-subhead">
                         <i class="fa fa-mobile"></i>
                         Mobile Development
                     </h3>
@@ -70,12 +71,26 @@
 
             <div class="pure-g">
                 <div class="l-box-lrg pure-u-1 pure-u-med-2-5">
-                    <form class="pure-form pure-form-stacked">
+                    @helper.form(action = routes.Application.sendMessage(), 'class -> "pure-form pure-form-stacked") {
+                        <fieldset>
+                            <label for="name">Your Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your Name">
+
+                            <label for="email">Your Email</label>
+                            <input id="email" name="email" type="email" placeholder="Your Email">
+
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="contact-message" placeholder="Tell me something interesting."></textarea>
+
+                            <button type="submit" class="pure-button">Send</button>
+                        </fieldset>
+                    }
+@*
+                    <form class="pure-form pure-form-stacked" method="POST" action="@routes.Application.sendMessage">
                         <fieldset>
 
-                            <label for="email">Your Name</label>
-                            <input id="email" type="text" placeholder="Your Name">
-
+                            <label for="name">Your Name</label>
+                            <input id="name" type="text" placeholder="Your Name">
 
                             <label for="email">Your Email</label>
                             <input id="email" type="email" placeholder="Your Email">
@@ -85,7 +100,7 @@
 
                             <button type="submit" class="pure-button">Send</button>
                         </fieldset>
-                    </form>
+                    </form>*@
                 </div>
 
                 <div class="l-box-lrg pure-u-1 pure-u-med-3-5">

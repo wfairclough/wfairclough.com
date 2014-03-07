@@ -9,7 +9,8 @@ libraryDependencies ++= Seq(
   "org.webjars" % "angularjs" % "1.2.13",
   "org.webjars" % "jquery" % "2.1.0-2",
   "org.webjars" % "modernizr" % "2.6.2-1",
-  "org.reactivemongo" %% "play2-reactivemongo" % "0.10.2"
+  "org.reactivemongo" %% "play2-reactivemongo" % "0.10.2",
+  "com.typesafe" % "play-plugins-mailer_2.10" % "2.2.0"
 )     
 
 play.Project.playScalaSettings
