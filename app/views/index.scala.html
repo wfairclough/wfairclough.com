@@ -1,12 +1,114 @@
 
 @main("Home") {
 
-    <div class="row full-width">
-        <div class="large-12 columns" style="padding: 0px;">
-            <section class="hero-card">
-                <div class="hero-img"></div>
-            </section>
+
+    @splash()
+
+    <div class="content-wrapper">
+        <div class="content">
+            <h2 class="content-head is-center">Development Interests</h2>
+
+            <div class="pure-g">
+                <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
+
+                    <h3 class="content-subhead">
+                        <i class="fa fa-play"></i>
+                        Scala and Play Framework
+                    </h3>
+                    <p>
+                        The simplicity of Ruby on Rails with a typed language that gives me awesome tools like higher-order functions and pattern matching.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fa fa-mobile"></i>
+                        Mobile Development
+                    </h3>
+                    <p>
+                        Always trying out the latest iOS betas and implementing my newsest ideas into mobile apps.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
+                    <h3 class="content-subhead">
+                        <i class="fa fa-code"></i>
+                        Web Front-End
+                    </h3>
+                    <p>
+                        Currently playing around with AngularJS to rid my usually Front-End spaghetti code mess. Love defining my own directives and services to decouple my business code from my views.
+                    </p>
+                </div>
+                <div class="l-box pure-u-1 pure-u-med-1-2 pure-u-lrg-1-4">
+                    <h3 class="content-subhead">
+                        <span class="char-icon">&lambda;</span> Functional Programming
+                    </h3>
+                    <p>
+                        Loving immutability and solving problems with high-order functions. Using Scala and Scheme to practice and advance my functional programming skills.
+                    </p>
+                </div>
+            </div>
         </div>
+
+        <div class="ribbon l-box-lrg pure-g">
+            <div class="l-box-lrg is-center pure-u-1 pure-u-med-1-2 pure-u-lrg-2-5">
+                <img class="pure-img-responsive" alt="File Icons" width="300" src="@routes.Assets.at("/images/common/file-icons.png")">
+            </div>
+            <div class="pure-u-1 pure-u-med-1-2 pure-u-lrg-3-5">
+
+                <h2 class="content-head content-head-ribbon">Laboris nisi ut aliquip.</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor.
+                </p>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 hred="#contact-form" class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
+
+            <div class="pure-g">
+                <div class="l-box-lrg pure-u-1 pure-u-med-2-5">
+                    <form class="pure-form pure-form-stacked">
+                        <fieldset>
+
+                            <label for="email">Your Name</label>
+                            <input id="email" type="text" placeholder="Your Name">
+
+
+                            <label for="email">Your Email</label>
+                            <input id="email" type="email" placeholder="Your Email">
+
+                            <label for="password">Your Password</label>
+                            <input id="password" type="password" placeholder="Your Password">
+
+                            <button type="submit" class="pure-button">Sign Up</button>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div class="l-box-lrg pure-u-1 pure-u-med-3-5">
+                    <h4>Contact Us</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+
+                    <h4>More Information</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        @footer()
+
     </div>
 
 }
