@@ -5,7 +5,7 @@
     @splash()
 
     <div class="content-wrapper">
-        <div class="content">
+        <div id="interests" class="content">
             <h2 class="content-head is-center">Development Interests</h2>
 
             <div class="pure-g">
@@ -48,7 +48,7 @@
             </div>
         </div>
 
-        <div class="ribbon l-box-lrg pure-g">
+        <div id="experience" class="ribbon l-box-lrg pure-g">
             <div class="l-box-lrg is-center pure-u-1 pure-u-med-1-2 pure-u-lrg-2-5">
                 <img class="pure-img-responsive" alt="File Icons" width="300" src="@routes.Assets.at("/images/common/file-icons.png")">
             </div>
@@ -65,8 +65,8 @@
             </div>
         </div>
 
-        <div class="content">
-            <h2 hred="#contact-form" class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
+        <div id="contact" class="content">
+            <h2 class="content-head is-center">Contact me</h2>
 
             <div class="pure-g">
                 <div class="l-box-lrg pure-u-1 pure-u-med-2-5">
@@ -80,27 +80,45 @@
                             <label for="email">Your Email</label>
                             <input id="email" type="email" placeholder="Your Email">
 
-                            <label for="password">Your Password</label>
-                            <input id="password" type="password" placeholder="Your Password">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="contact-message" placeholder="Tell me something interesting."></textarea>
 
-                            <button type="submit" class="pure-button">Sign Up</button>
+                            <button type="submit" class="pure-button">Send</button>
                         </fieldset>
                     </form>
                 </div>
 
                 <div class="l-box-lrg pure-u-1 pure-u-med-3-5">
-                    <h4>Contact Us</h4>
+                    <h4>
+                        <i class="fa fa-github"></i>
+                        <a href="https://github.com/wfairclough" class="contact-title">GitHub</a>
+                    </h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
+                        Come check out my current projects on GitHub. Send me a pull request if you have something cool to show me.
                     </p>
 
-                    <h4>More Information</h4>
+                    <h4>
+                        <i class="fa fa-linkedin-square"></i>
+                        <a href="http://ca.linkedin.com/pub/william-fairclough/24/b03/466/" class="contact-title">LinkedIn</a>
+                    </h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
+                        Always interested in hearing about new development opportunities.
+                    </p>
+
+                    <h4>
+                        <i class="fa fa-twitter"></i>
+                        <a href="#" class="contact-title">Twitter</a>
+                    </h4>
+                    <p>
+                        Send me a tweet.
+                    </p>
+
+                    <h4>
+                        <i class="fa fa-file-text"></i>
+                        <a href="@routes.Assets.at("files/WillFaircloughResume.pdf")" class="contact-title">Resume</a>
+                    </h4>
+                    <p>
+                        I try to keep this up to date, but never enough hours in the day.
                     </p>
                 </div>
             </div>
@@ -110,5 +128,8 @@
         @footer()
 
     </div>
+
+
+
 
 }
