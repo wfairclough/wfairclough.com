@@ -28,7 +28,7 @@ willApp.directive('scrollTo', function($document, Scroller) {
        },
        link: function( $scope, $element ) {
            $element.on("click", function() {
-               Scroller.scrollTo($scope.elemName)
+               Scroller.scrollTo($scope.elemName, $(".home-menu").height() + 15)
            })
 
        }
