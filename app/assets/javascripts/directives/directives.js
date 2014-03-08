@@ -1,25 +1,10 @@
 
-
-
-//willApp.directive('ngMaxNum', function() {
-//	return {
-//		restrict: 'A',
-//		scope: {
-//			ngMaxNum: '='
-//		},
-//		controller: function($scope, $element, $attrs, $location) {
-//			$scope.$watch(function() {
-//											return $scope.ngMaxNum;
-//										}, function() {
-//											console.log($scope.ngMaxNum)
-//											$element[0].setAttribute("max", $scope.ngMaxNum);
-//										});
-//		}
-//
-//	}
-//});
-
-
+/* ScrollTo Directive is used as an attribute that takes the id of the
+ * element to scroll to when it is clicked.
+ *
+ * Requires the Scroller services.
+ *
+ */
 willApp.directive('scrollTo', function($document, Scroller) {
    return {
        restrict: 'A',
@@ -30,7 +15,7 @@ willApp.directive('scrollTo', function($document, Scroller) {
            $element.on("click", function() {
                Scroller.scrollTo($scope.elemName, $(".home-menu").height() + 15)
            })
-
        }
    }
 });
+

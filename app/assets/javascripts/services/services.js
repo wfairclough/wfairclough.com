@@ -1,24 +1,19 @@
 
 
-//$.ready(function() {
-//
-//    (function($) {
-//        $.fn.goTo = function() {
-//            $('html, body').animate({
-//                scrollTop: $(this).offset().top + 'px'
-//            }, 'fast');
-//            return this; // for chaining...
-//        }
-//    })(jQuery);
-//
-//
-//});
-
-
-
-
+/* Scroller Services manages the functions to animate scrolling to an
+ * element in the DOM.
+ *
+ */
 var Scroller = function() {
     return {
+        /*
+         * scrollTo: Function to scroll to an element in the DOM
+         *
+         * param elementName The name of the element to scroll to in the DOM
+         * param headerSize [Optional] size of the header if it is fixed
+         *                  and you want it to scroll to the bottom of the header
+         *
+         */
         scrollTo: function(elemName, headerSize) {
             if ((elemName == undefined) || (elemName == null)) return;
 
