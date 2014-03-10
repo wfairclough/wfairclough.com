@@ -17,7 +17,11 @@ object Global extends GlobalSettings {
     val modeSpecificConfig = config ++ Configuration(ConfigFactory.load(s"application.${mode.toString.toLowerCase}.conf"))
     val mailerConfig = modeSpecificConfig ++ Configuration(ConfigFactory.load(s"mailer.conf"))
 
-    play.Logger.info("SendGrid User: " + scala.util.Properties.envOrElse("SENDGRID_USERNAME", "No SendGrid User"))
+
+    play.Logger.info("SendGrid User: ")
+    val username = scala.util.Properties.envOrElse("SENDGRID_USERNAME", "No SendGrid User")
+    play.Logger.info(username)
+    println(username)
 
     super.onLoadConfig(mailerConfig, path, classloader, mode)
   }
